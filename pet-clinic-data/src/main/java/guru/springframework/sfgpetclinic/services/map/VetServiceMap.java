@@ -1,10 +1,13 @@
 package guru.springframework.sfgpetclinic.services.map;
 
-import java.util.Set;	
+import java.util.Set;
+
+import org.springframework.stereotype.Service;
 
 import guru.springframework.sfgpetclinic.model.Vet;
 import guru.springframework.sfgpetclinic.services.VetService;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService{
 
     @Override
@@ -34,7 +37,6 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetS
 
     @Override
     public Vet findByLastName(String lastName) {
-        // TODO Auto-generated method stub
         return null;
     }
     
